@@ -90,10 +90,31 @@ h2{
     font-family: 'PT Serif', serif;
     font-size: 32px;
     font-style: italic;
-    letter-spacing: 2px ;
+    letter-spacing: 2px 11111111;
 }
 
 .welcome p{
     text-align: center;
+}
 
+/*offers*/
+
+.offers{
+    font-family: 'PT Serif', serif;
+    color: white;
+    background-color: #50b9e1;
+    padding: 20px 30px;
+}
+
+.offers img{
+    width: 70px;
+}
+
+.offers li {
+    width: 30%;
+    text-align: center;
+}
+
+.offers a{
+    color: white;
 }
