@@ -29,6 +29,10 @@ li{
     padding-right: 10px;
 }
 
+li:not(:last-child){
+    padding-right: 10px;
+}
+
 a{
     text-decoration: none;
     color: black;
@@ -52,7 +56,7 @@ a:hover{
 /*site-header*/
 .site-header{
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('./Images/kids_main.jpg');
-       background-size: cover;
+    background-size: cover;
 }
 
 .site-header h1{
@@ -111,10 +115,105 @@ h2{
 }
 
 .offers li {
-    width: 30%;
+    width: 27.5%;
     text-align: center;
+    padding: 20px 30px;
 }
 
 .offers a{
     color: white;
 }
+
+/*camps*/
+
+.camps{
+    color: #5a7c8a;
+    padding: 20px 0;
+}
+
+body > main > section.camps > p{
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.camps img{
+    width: 400px;
+    height: 250px;
+}
+
+.camps li{
+    display: inline-block;
+    width: 400px;
+}
+
+.camps li:not(:last-child){
+    padding-right: 40.7px;
+}
+
+.info{
+    border-bottom: 2px solid #5a7c8a;
+    padding-bottom: 10px;
+}
+
+.info div{
+    display: inline-block;
+}
+
+.info div p,
+.info div h3{
+    margin: 0;
+    padding: 0;
+}
+
+.info div:nth-child(1){
+    width: 339px;
+}
+
+.info div:nth-child(2){
+    background: #50b9e1;
+    padding: 10px;
+    color: white;
+    font-size: 22px;
+}
+
+.more-info button{
+    border: 2px solid #50b9e1;
+    color: #50b9e1;
+    background: transparent;
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+.more-info button:hover{
+    background-color: #50b9e1;
+    color: white;
+    cursor: pointer;
+}
+
+/*footer*/
+footer{
+    background-color: #50b9e1;
+    color: #5a7c8a;
+    padding: 0 40px 0 200px;
+}
+
+footer p{
+    display: inline-block;
+    width: 88%;
+}
+
+footer ul{
+    display: inline-block;
+}
+
+footer ul a{
+    color: #5a7c8a;
+}
+
+footer i{
+    border: 1px solid #5a7c8a;
+    border-radius: 50%;
+    padding: 5px;
+}
+
