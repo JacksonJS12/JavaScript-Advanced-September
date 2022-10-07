@@ -29,4 +29,3 @@ function solve() {
     resultContainer.textContent = "Error!";
   }
 }
-solve("this is an example", "Camel Case");
