@@ -1,17 +1,17 @@
 function solve() {
-  let input = document.getElementById("input").vale;
-  let output = document.getElementById("output");
-  output.innerHTML = "";
-  let arrayText = input.split(".").filter(x=> x.length > 0);
+  let inputStr = document.getElementById('input').value;
+  let output = document.getElementById('output');
 
-  for(let i = 0;i < arrayText.length; i+=3) {
-    let res = [];
-    for(let x = 0; x < 3; x++) {
-        if (arrayText[i+x]) {
-          res.push(arrayText[i+x]);
-        }
-    }
-    let resText = res.join(". ") + ".";
-    output.innerHTML += `<p>${resText}</p>`
+  let input = inputStr.split('.').filter((p) => p.length > 0);
+
+  for (let i = 0; i < input.length; i += 3) {
+      let arr = [];
+      for (let y = 0; y < 3; y++) {
+          if (input[i + y]) {
+              arr.push(input[i + y]);
+          }
+      }
+      let paragraph = arr.join('. ') + '.';
+      output.innerHTML += `<p>${paragraph}</p>`;
   }
 }
