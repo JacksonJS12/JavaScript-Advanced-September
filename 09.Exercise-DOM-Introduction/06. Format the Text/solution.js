@@ -2,7 +2,7 @@ function solve() {
   let input = document.getElementById("input").vale;
   let output = document.getElementById("output");
   output.innerHTML = "";
-  let arrayText = input.split(".");
+  let arrayText = input.split(".").filter(x=> x.length > 0);
 
   for(let i = 0;i < arrayText.length; i+=3) {
     let res = [];
@@ -11,7 +11,7 @@ function solve() {
           res.push(arrayText[i+x]);
         }
     }
-    let resText = res.join(". ") + ".".trim();
+    let resText = res.join(". ") + ".";
     output.innerHTML += `<p>${resText}</p>`
   }
 }
