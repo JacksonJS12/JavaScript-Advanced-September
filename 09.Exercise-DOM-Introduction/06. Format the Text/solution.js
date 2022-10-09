@@ -7,7 +7,7 @@ function solve() {
   for(let i = 0;i < arrayText.length; i+=3) {
     let res = [];
     for(let x = 0; x < 3; x++) {
-        if(arrayText[i+x]) {
+        if (arrayText[i+x]) {
           res.push(arrayText[i+x]);
         }
     }
