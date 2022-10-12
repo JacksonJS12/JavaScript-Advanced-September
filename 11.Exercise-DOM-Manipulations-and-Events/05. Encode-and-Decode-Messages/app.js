@@ -1,3 +1,4 @@
 function encodeAndDecodeMessages() {
-    console.log('TODO...')
+    let buttons = document.querySelectorAll("button");
+    
 }
