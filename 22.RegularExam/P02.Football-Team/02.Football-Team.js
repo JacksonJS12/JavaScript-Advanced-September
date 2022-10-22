@@ -21,15 +21,15 @@ class footballTeam{
                 })
             } else {
                 if(currPlayer.playerValue < playerValue){
-                    currPlayer.playerValue = playerValue;
+                    let index = this.invitedPlayers.indexOf(player);
+                    this.invitedPlayers[index].playerValue = playerValue;
                 }
             }
             
         });
-        let buff = [];
             this.invitedPlayers.forEach(player => buff.push(player.name))
-    
-            return `You successfully invite ${buff.join(", ")}.`;
+            let uniqueArray = [...new Set(invitedPlayers)];
+            return `You successfully invite ${uniqueArray.join(", ")}.`;
     }
 
     signContract(selectedPlayer){
@@ -45,7 +45,8 @@ class footballTeam{
             throw Error(`The manager's offer is not enough to sign a contract with ${name}, ${priceDifference} million more are needed to sign the contract!`)
         }
 
-        currentPlayer.playerValue = "Bought";
+        let index = this.invitedPlayers.indexOf(player);
+        this.invitedPlayers[index].playerValue = "Bought";
    
 
         return `Congratulations! You sign a contract with ${name} for ${playerOffer} million dollars.`
