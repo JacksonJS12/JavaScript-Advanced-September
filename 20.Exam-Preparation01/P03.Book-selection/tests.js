@@ -11,7 +11,7 @@ describe("Tests for bookSelection", ()=> {
             let expectedText = concatenateStr("Thriller", 12);
             assert.equal(bookSelection.isGenreSuitable("Thriller", 12), expectedText);
 
-            expectedText = concatenateStr("Horror", 12);
+            expectedText = concatenateStr("Horror", 12); 
             assert.equal(bookSelection.isGenreSuitable("Horror", 12), expectedText);
         });
 
